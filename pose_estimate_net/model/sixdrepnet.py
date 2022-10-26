@@ -109,27 +109,3 @@ class SixDRepNet(nn.Module):
         return x
 
 
-# transformations = transforms.Compose([transforms.ToTensor(),
-#                                       transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])])
-
-# # #デバック用
-# model=SixDRepNet(-1)
-# #model.cuda()
-# model.eval()
-# # img=cv2.imread("June-02-2022-10-58-16-color.png")
-# # img = img.convert('RGB')
-# # img = transformations(img)
-# img = Image.open("June-02-2022-10-58-16-color.png").convert('RGB')
-# img = transformations(img)
-# #img = torch.Tensor(img).cuda()
-# # print(img.dim())
-# # print(img.size())
-# pred_mat = model(img.unsqueeze(0))
-# #print(model)
-# print(pred_mat)
-# #print(pred_mat.size())
-
-# euler = utils.compute_euler_angles_from_rotation_matrices(
-#                     pred_mat)*180/np.pi
-# print(euler)
-
